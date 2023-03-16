@@ -22,13 +22,13 @@ else:
 # 24 -> 4  16  4
 # 60 -> 10  40  10
 
-# allBirds = int(input('Введите общее количество журавликов: '))
-# if allBirds <= 0:
-#     print('Введено отрицательное значение или ноль')
-# else:
-#     katya = (allBirds/3)*2
-#     eachBoy = (allBirds/3)/2
-#     print('Серёжа сделал', eachBoy,', Катя сделала', katya,', Петя сделал', eachBoy)
+allBirds = int(input('Введите общее количество журавликов: '))
+if allBirds <= 0:
+    print('Введено отрицательное значение или ноль')
+else:
+    katya = (allBirds/3)*2
+    eachBoy = (allBirds/3)/2
+    print('Серёжа сделал', eachBoy,', Катя сделала', katya,', Петя сделал', eachBoy)
 
 
 # Задача 6: 
@@ -39,20 +39,20 @@ else:
 # 385916 -> yes
 # 123456 -> no
 
-# number = input('Введите шестизначный номер билета: ')
-# if len(number) < 6 or len(number) > 6:
-#     print('Введён не шестизначный номер')
-# else:
-#     a = int(number[0])
-#     b = int(number[1])
-#     c = int(number[2])
-#     d = int(number[3])
-#     e = int(number[4])
-#     f = int(number[5])
-#     if a+b+c==d+e+f:
-#         print('Билет счастливый!')
-#     else:
-#         print('Не повезло!')
+number = input('Введите шестизначный номер билета: ')
+if len(number) < 6 or len(number) > 6:
+    print('Введён не шестизначный номер')
+else:
+    a = int(number[0])
+    b = int(number[1])
+    c = int(number[2])
+    d = int(number[3])
+    e = int(number[4])
+    f = int(number[5])
+    if a+b+c==d+e+f:
+        print('Билет счастливый!')
+    else:
+        print('Не повезло!')
 
 # Задача 8: 
 # Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек, если разрешается сделать
@@ -60,13 +60,13 @@ else:
 # 3 2 4 -> yes
 # 3 2 1 -> no
 
-# length = int(input('Количество долек в длину: '))
-# width = int(input('Количество долек в ширину: '))
-# pieces = int(input('Сколько долек нужно отломить: '))
+length = int(input('Количество долек в длину: '))
+width = int(input('Количество долек в ширину: '))
+pieces = int(input('Сколько долек нужно отломить: '))
 
-# if length <= 0 or width <= 0 or pieces <= 0:
-#     print('Введено число меньше нуля или ноль')
-# elif (length * width-pieces) % width == 0 or (length*width-pieces) % length == 0:
-#     print('yes')
-# else:
-#     print('no')
+if length <= 0 or width <= 0 or pieces <= 0:
+    print('Введено число меньше нуля или ноль')
+elif (length * width-pieces) % width == 0 or (length*width-pieces) % length == 0:
+    print('yes')
+else:
+    print('no')
